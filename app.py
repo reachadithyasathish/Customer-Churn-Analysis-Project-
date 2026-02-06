@@ -216,7 +216,7 @@ def main():
     importance_df.set_index("Feature"),
     horizontal=True,
     height=300
-    )
+    
     
     # Insights
     top_feature = importance_df.iloc[-1]["Feature"]
@@ -229,6 +229,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
