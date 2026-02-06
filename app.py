@@ -57,7 +57,7 @@ st.markdown("""
 @st.cache_resource
 def load_model():
     """Load trained model and artifacts."""
-    model_path = "models/churn_model.pkl"
+    model_path = "churn_model.pkl"
     if not os.path.exists(model_path):
         return None
     return joblib.load(model_path)
@@ -228,3 +228,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
