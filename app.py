@@ -214,8 +214,8 @@ def main():
     #st.bar_chart(
     st.write("Feature importance data is available in the model.")
     importance_df.set_index("Feature"),
-        horizontal=True,
-        height=300
+    horizontal=True,
+    height=300
     )
     
     # Insights
@@ -229,6 +229,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
