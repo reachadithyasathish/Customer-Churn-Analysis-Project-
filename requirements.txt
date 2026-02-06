@@ -3,4 +3,5 @@ numpy
 scikit-learn
 streamlit
 joblib
-altair
+altair==4.2.2
+
