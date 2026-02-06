@@ -99,14 +99,13 @@ def generate_churn_data(n_samples: int = 1000, seed: int = 42) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    # Create data directory
-    os.makedirs("data", exist_ok=True)
+   
     
     # Generate and save dataset
     print("Generating synthetic customer churn data...")
     df = generate_churn_data(n_samples=1000)
     
-    output_path = "data/customer_churn.csv"
+    output_path = "customer_churn.csv"
     df.to_csv(output_path, index=False)
     
     print(f"\n✓ Dataset saved to: {output_path}")
@@ -114,3 +113,4 @@ if __name__ == "__main__":
     print(f"  Churn rate: {(df['Churn'] == 'Yes').mean():.1%}")
     print(f"\nSample data:")
     print(df.head(10).to_string(index=False))
+
