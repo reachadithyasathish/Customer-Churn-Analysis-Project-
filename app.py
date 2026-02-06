@@ -119,7 +119,7 @@ def main():
     )
     
     monthly_charges = st.sidebar.slider(
-        "Monthly Charges (₹)",
+        "Monthly Charges ($)",
         min_value=18.0,
         max_value=120.0,
         value=65.0,
@@ -128,7 +128,7 @@ def main():
     )
     
     total_charges = st.sidebar.number_input(
-        "Total Charges (₹)",
+        "Total Charges ($)",
         min_value=0.0,
         max_value=10000.0,
         value=float(tenure * monthly_charges),
@@ -229,6 +229,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
